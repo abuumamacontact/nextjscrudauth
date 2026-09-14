@@ -1,4 +1,5 @@
 import PlantCatalog from "@/components/ui/PlantCatalog";
+import Hero from "@/components/Hero";
 import { createAloeVera, getPlants } from "@/actions/plant.action";
 import { hexclaveServerApp } from "@/hexclave/server";
 
@@ -16,6 +17,7 @@ export default async function Page() {
 
   return (
     <main>
+      <Hero />
       {!user && (
         <div className="px-8 pt-8">
           <a href="/Signin" className="underline">
@@ -34,7 +36,9 @@ export default async function Page() {
           </button>
         </form>
       )}
-      <PlantCatalog plants={userPlants} />
+      <div id="catalog">
+        <PlantCatalog plants={userPlants} />
+      </div>
     </main>
   );
 }
