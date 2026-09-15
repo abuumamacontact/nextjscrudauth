@@ -20,7 +20,7 @@ export default async function Page() {
       <Hero />
       {!user && (
         <div className="px-8 pt-8">
-          <a href="/Signin" className="underline">
+          <a href="/signin" className="underline">
             Sign in to see your plant catalog
           </a>
         </div>

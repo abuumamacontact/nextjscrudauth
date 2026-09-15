@@ -5,6 +5,7 @@ export const config: HexclaveConfig = {
     selectedThemeId: "a0172b5d-cff0-463b-83bb-85124697373a",
   },
   auth: {
+    allowSignUp: true,
     password: {
       allowSignIn: true,
     },
