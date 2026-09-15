@@ -11,14 +11,8 @@ export const hexclaveClientApp = new HexclaveClientApp({
   tokenStore: "nextjs-cookie",
 
   urls: {
-    signIn: {
-      type: "custom",
-      url: "/signin",
-      version: 1,
-    },
-
     default: {
-      type: "hosted",
+      type: "handler-component",
     },
   },
 });
